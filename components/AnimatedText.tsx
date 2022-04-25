@@ -1,55 +1,63 @@
-import { motion, AnimatePresence, useAnimation } from 'framer-motion';
-import { useEffect } from 'react';
+import { Container, ContainerProps } from '@chakra-ui/react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 interface Props {
-    children: string;
+    text: string;
+    animationType: number;
+    [x: string]: any; //TODO: Replace with appropriate props if possible instead of using this workaround.
 }
-export const AnimatedText = ({ children }: Props) => {
-    const controls = useAnimation();
+
+type AnimationStates = 'before' | 'after';
+
+// Create custom Motion component to allow for Chakra & Motion props to both be passed
+const ChakraHeading = motion<ContainerProps>(Container);
+
+export const AnimatedText = ({ text, animationType, ...props }: Props) => {
+    const [variant, setVariant] = useState<AnimationStates>('before');
     const [ref, inView] = useInView();
 
     // Start the animation when scrolled into view
     useEffect(() => {
         if (inView) {
-            controls.start('after');
+            setVariant('after');
         }
-    }, [controls, inView]);
+    }, [inView]);
 
     return (
         <AnimatePresence>
-            <motion.h2
+            <ChakraHeading
                 ref={ref}
-                style={{ height: '30px' }}
                 variants={letterContainerVariants}
                 initial={'before'}
-                animate={controls}
-                exit={'before'}
-                key={children}
-                aria-label={children}
+                animate={variant}
+                key={text}
+                aria-label={text}
+                m={0}
+                p={0}
+                {...props}
             >
-                {children.split('').map((word: string, index: number) => (
-                    <div key={`word-${word}-${index}`} style={{ display: 'inline-block' }}>
-                        {Array.from(word).map((letter, index) => (
-                            <motion.span
-                                key={`${index}-${letter}`}
-                                style={{
-                                    position: 'relative',
-                                    display: 'inline-block',
-                                    width: 'auto',
-                                }}
-                                variants={letterVariants}
-                            >
-                                {letter === ' ' ? '\u00A0' : letter}
-                            </motion.span>
-                        ))}
-                        {'\u00A0'}
-                    </div>
+                {Array.from(text).map((letter, index) => (
+                    <motion.span
+                        key={`${index}-${letter}`}
+                        style={{
+                            position: 'relative',
+                            display: 'inline-block',
+                            width: 'auto',
+                        }}
+                        variants={letterVariants[animationType % letterVariants.length]}
+                    >
+                        {letter === ' ' ? '\u00A0' : letter}
+                    </motion.span>
                 ))}
-            </motion.h2>
+                {'\u00A0'}
+            </ChakraHeading>
         </AnimatePresence>
     );
 };
+
+// =======Animation Properties===========
 
 const letterContainerVariants = {
     before: {
@@ -64,23 +72,51 @@ const letterContainerVariants = {
     },
 };
 
-const letterVariants = {
-    before: {
-        opacity: 0,
-        y: 20,
-        transition: {
-            type: 'spring',
-            damping: 12,
-            siffness: 200,
-        },
-    },
-    after: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            type: 'spring',
-            damping: 12,
-            stiffness: 200,
-        },
-    },
+const transition = {
+    type: 'spring',
+    damping: 12,
+    stiffness: 200,
 };
+
+const transition2 = {
+    type: 'spring',
+    damping: 25,
+    stiffness: 200,
+};
+
+const letterVariants = [
+    {
+        before: {
+            opacity: 0,
+            y: 20,
+            transition: transition,
+        },
+        after: {
+            opacity: 1,
+            y: 0,
+            transition: transition,
+        },
+    },
+    {
+        before: {
+            opacity: 0,
+            x: 40,
+            transition: transition2,
+        },
+        after: {
+            opacity: 1,
+            x: 0,
+            transition: transition2,
+        },
+    },
+    {
+        before: {
+            opacity: 0,
+            transition: transition2,
+        },
+        after: {
+            opacity: 1,
+            transition: transition2,
+        },
+    },
+];

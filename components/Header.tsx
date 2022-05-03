@@ -11,12 +11,15 @@ import {
     DrawerCloseButton,
     DrawerHeader,
     DrawerBody,
-    Link,
     Button,
+    Icon,
+    Box,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import NextLink from 'next/link';
 import { useRef } from 'react';
+import { sectionNames } from '../utils/constants';
+import { scrollTo as scroll } from '../utils/scrollTo';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Header = () => {
     const headerColor = useColorModeValue('gray.50', 'gray.900');
@@ -26,6 +29,10 @@ const Header = () => {
 
     const handleToggle = () => (isOpen ? onClose() : onOpen());
 
+    const scrollTo = (id: string) => {
+        scroll({ id, before: onClose });
+    };
+
     // TODO: Refactor into separate component that handles its own display logic
     const getNavLinks = (viewport: string) => {
         const direction = viewport === 'desktop' ? 'row' : 'column';
@@ -34,33 +41,50 @@ const Header = () => {
             <Stack
                 direction={{ base: 'column', md: direction }}
                 display={{ base: display, md: 'flex' }}
-                width={{ base: 'fill', md: 'auto' }}
-                alignItems="center"
+                width={{ base: 'fill', md: 'fill' }}
+                align="center"
                 justify="center"
                 flexGrow={1}
                 spacing={10}
             >
-                <NextLink href="/projects" passHref>
-                    <Link>
-                        <Button colorScheme="white" variant="link">
-                            Projects
-                        </Button>
-                    </Link>
-                </NextLink>
-                <NextLink href="/skils" passHref>
-                    <Link>
-                        <Button colorScheme="white" variant="link">
-                            Skills
-                        </Button>
-                    </Link>
-                </NextLink>
-                <NextLink href="/about" passHref>
-                    <Link>
-                        <Button colorScheme="white" variant="link">
-                            About
-                        </Button>
-                    </Link>
-                </NextLink>
+                <Button
+                    onClick={() => scrollTo(sectionNames.projects)}
+                    colorScheme="white"
+                    variant="link"
+                >
+                    Projects
+                </Button>
+                <Button
+                    onClick={() => scrollTo(sectionNames.skills)}
+                    colorScheme="white"
+                    variant="link"
+                >
+                    Skills
+                </Button>
+                <Button
+                    onClick={() => scrollTo(sectionNames.about)}
+                    colorScheme="white"
+                    variant="link"
+                >
+                    About Me
+                </Button>
+                <Button
+                    onClick={() => scrollTo(sectionNames.contact)}
+                    colorScheme="white"
+                    variant="link"
+                >
+                    Contact
+                </Button>
+                <Button
+                    as="a"
+                    href="https://resume.creddle.io/resume/jltrgnkt9gg"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    colorScheme="white"
+                    variant="outline"
+                >
+                    Resume
+                </Button>
             </Stack>
         );
     };

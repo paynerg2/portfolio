@@ -1,17 +1,21 @@
 import { useState } from 'react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
-import { Box, Flex, useColorModeValue, Heading, Tag, Stack, Button, Icon } from '@chakra-ui/react';
+import {
+    Box,
+    Flex,
+    useColorModeValue,
+    Heading,
+    Tag,
+    Stack,
+    Button,
+    Icon,
+    VStack,
+    HStack,
+} from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 import Image from 'next/image';
+import { Project } from '../utils/interfaces';
 
-export interface Project {
-    name: string;
-    description: string;
-    image: string;
-    githubRepo: string;
-    liveWebsite?: string;
-    tags: string[];
-}
 interface Props {
     project: Project;
 }
@@ -36,16 +40,16 @@ const ProjectCard = ({ project }: Props) => {
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <Image src={image} alt={`${name}-preview`} />
-                <Stack p="1.5em" spacing="0.75em" justifyContent="center" alignItems="flex-start">
+                <Stack p="1.5em" spacing={4} justifyContent="center" alignItems="center">
                     <Heading color={useColorModeValue('blue.700', 'blue.300')}>{name}</Heading>
-                    <Box>{description}</Box>
-                    <Box>
+                    <Box textAlign="center">{description}</Box>
+                    <Flex justifyContent="center" flexWrap="wrap">
                         {tags.map((tag) => (
                             <Tag colorScheme="blue" mr={2} mb={2} key={`${name}-${tag}`}>
                                 {tag}
                             </Tag>
                         ))}
-                    </Box>
+                    </Flex>
                 </Stack>
 
                 {/* Overlay */}

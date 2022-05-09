@@ -1,6 +1,6 @@
 import { Button } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
-import { ReactNode, useContext, useEffect, useRef, useState } from 'react';
+import { ReactNode, useContext, useEffect, useState } from 'react';
 import AppContext from '../utils/appContext';
 
 interface Props {

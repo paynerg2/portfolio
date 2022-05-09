@@ -4,3 +4,8 @@ export const sectionNames = {
     about: 'about',
     contact: 'contact',
 } as const;
+
+export const skillIconSize = {
+    height: '80',
+    width: '80',
+} as const;

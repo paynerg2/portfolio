@@ -1,14 +1,4 @@
-import {
-    Box,
-    Heading,
-    HStack,
-    Stack,
-    VStack,
-    Text,
-    Divider,
-    Icon,
-    IconButton,
-} from '@chakra-ui/react';
+import { Box, Heading, HStack, Stack, Text, Divider, Icon, IconButton } from '@chakra-ui/react';
 import { sectionNames } from '../utils/constants';
 import ContactForm from './ContactForm';
 import { MdOutlineMailOutline, MdPhoneAndroid } from 'react-icons/md';
@@ -60,7 +50,7 @@ const ContactSection = () => {
                         />
                         <IconButton
                             as="a"
-                            href="https://github.com/paynerg2"
+                            href="https://linkedin.com/in/paynerg2"
                             target="_blank"
                             rel="noopener noreferrer"
                             icon={<FaLinkedin />}

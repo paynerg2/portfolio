@@ -6,6 +6,7 @@ import {
     Input,
     Textarea,
     Stack,
+    useToast,
 } from '@chakra-ui/react';
 import { useForm } from 'react-hook-form';
 
@@ -13,11 +14,48 @@ const ContactForm = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors, isSubmitting },
     } = useForm();
+    const toast = useToast();
 
-    const onSubmit = (values: any) => {
+    const onSubmit = async (values: any) => {
         console.log(values);
+
+        const { name, email, subject, message } = values;
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json, text/plain, */*',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                subject: subject,
+                message: message,
+            }),
+        })
+            .then((res) => {
+                toast({
+                    title: 'Message sent',
+                    description: `Your message has been sent successfully. I'll get back to you soon!`,
+                    status: 'success',
+                    duration: 6000,
+                    isClosable: true,
+                });
+            })
+            .catch((error) => {
+                toast({
+                    title: 'Error',
+                    description: `Something went wrong. Try again in a few minutes.`,
+                    status: 'error',
+                    duration: 6000,
+                    isClosable: true,
+                });
+            });
+
+        reset();
     };
 
     return (

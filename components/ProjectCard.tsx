@@ -9,7 +9,6 @@ import {
     Stack,
     Button,
     Icon,
-    VStack,
     HStack,
 } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
@@ -24,8 +23,38 @@ const ProjectCard = ({ project }: Props) => {
     const { name, description, image, githubRepo, liveWebsite, tags } = project;
     const [isHovered, setIsHovered] = useState(false);
 
+    const getSourceLinks = () => {
+        return (
+            <>
+                <Button
+                    as="a"
+                    href={githubRepo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    colorScheme="blue"
+                    variant="outline"
+                    size="lg"
+                    rightIcon={<Icon as={FaGithub} />}
+                >
+                    See Code
+                </Button>
+                <Button
+                    as="a"
+                    href={liveWebsite}
+                    target="_blank"
+                    colorScheme="blue"
+                    variant="outline"
+                    size="lg"
+                    rightIcon={<ExternalLinkIcon />}
+                >
+                    View Site
+                </Button>
+            </>
+        );
+    };
+
     return (
-        <Stack spacing="10em" w="full" alignItems="center" justifyContent="center" wrap="wrap">
+        <Stack spacing={4} w="full" alignItems="center" justifyContent="center" wrap="wrap">
             <Box
                 bg={useColorModeValue('white', 'gray.900')}
                 h="35em"
@@ -74,32 +103,13 @@ const ProjectCard = ({ project }: Props) => {
                         justify="center"
                         gap={4}
                     >
-                        <Button
-                            as="a"
-                            href={githubRepo}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            colorScheme="blue"
-                            variant="outline"
-                            size="lg"
-                            rightIcon={<Icon as={FaGithub} />}
-                        >
-                            See Code
-                        </Button>
-                        <Button
-                            as="a"
-                            href={liveWebsite}
-                            target="_blank"
-                            colorScheme="blue"
-                            variant="outline"
-                            size="lg"
-                            rightIcon={<ExternalLinkIcon />}
-                        >
-                            View Site
-                        </Button>
+                        {getSourceLinks()}
                     </Flex>
                 </Box>
             </Box>
+            <HStack spacing={8} display={{ base: 'block', md: 'none' }}>
+                {getSourceLinks()}
+            </HStack>
         </Stack>
     );
 };

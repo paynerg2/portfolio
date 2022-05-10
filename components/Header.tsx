@@ -12,25 +12,31 @@ import {
     DrawerHeader,
     DrawerBody,
     Button,
-    Icon,
-    Box,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { useRef } from 'react';
 import { sectionNames } from '../utils/constants';
 import { scrollTo as scroll } from '../utils/scrollTo';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { useRouter } from 'next/router';
 
 const Header = () => {
-    const headerColor = useColorModeValue('gray.50', 'gray.900');
-    const headerTextColor = useColorModeValue('gray.900', 'white');
+    const router = useRouter();
     const { isOpen, onOpen, onClose } = useDisclosure();
     const menuButtonRef = useRef(null);
+    const headerColor = useColorModeValue('gray.50', 'gray.900');
+    const headerTextColor = useColorModeValue('gray.900', 'white');
 
     const handleToggle = () => (isOpen ? onClose() : onOpen());
 
     const scrollTo = (id: string) => {
         scroll({ id, before: onClose });
+    };
+
+    const handleNav = (id: string) => {
+        if (router.pathname !== '/') {
+            router.push('/');
+        }
+        scrollTo(id);
     };
 
     // TODO: Refactor into separate component that handles its own display logic
@@ -55,21 +61,14 @@ const Header = () => {
                     Projects
                 </Button>
                 <Button
-                    onClick={() => scrollTo(sectionNames.skills)}
-                    colorScheme="white"
-                    variant="link"
-                >
-                    Skills
-                </Button>
-                <Button
-                    onClick={() => scrollTo(sectionNames.about)}
+                    onClick={() => handleNav(sectionNames.about)}
                     colorScheme="white"
                     variant="link"
                 >
                     About Me
                 </Button>
                 <Button
-                    onClick={() => scrollTo(sectionNames.contact)}
+                    onClick={() => handleNav(sectionNames.contact)}
                     colorScheme="white"
                     variant="link"
                 >

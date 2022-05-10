@@ -1,9 +1,11 @@
 //@ts-nocheck
 //TODO: Just create svg files for each of these directly from Devicon. React-devicon's library is incomplete - it doesn't even have Next!
 import IconChakraUI from '../assets/icons/chakra_ui_logo.svg';
+import IconContentful from '../assets/icons/contentful_logo.svg';
 import IconCsharp from 'react-devicon/csharp/original/CsharpOriginal.svg';
 import IconCss3 from 'react-devicon/css3/original/Css3Original.svg';
 import IconExpress from 'react-devicon/express/original/ExpressOriginal.svg';
+import IconGatsbyJS from '../assets/icons/gatsby_logo.svg';
 import IconGraphQL from '../assets/icons/graphql_logo.svg';
 import IconHeroku from 'react-devicon/heroku/original/HerokuOriginal.svg';
 import IconHtml5 from 'react-devicon/html5/original/Html5Original.svg';
@@ -130,7 +132,7 @@ export const icons = {
         </SelectButton>
     ),
     StyledComponents: (
-        <SelectButton key="StyledComponents" name="StyledComponents">
+        <SelectButton key="StyledComponents" name="Styled Components">
             <WrapItem>
                 <Image alt="StyledComponents" src={IconStyledComponents} {...skillIconSize} />
             </WrapItem>
@@ -147,6 +149,20 @@ export const icons = {
         <SelectButton key="NextJS" name="NextJS">
             <WrapItem>
                 <Image alt="NextJS" src={IconNextJS} {...skillIconSize} />
+            </WrapItem>
+        </SelectButton>
+    ),
+    Contentful: (
+        <SelectButton key="Contentful" name="Contentful">
+            <WrapItem>
+                <Image alt="Contentful" src={IconContentful} {...skillIconSize} />
+            </WrapItem>
+        </SelectButton>
+    ),
+    GatsbyJS: (
+        <SelectButton key="GatsbyJS" name="GatsbyJS">
+            <WrapItem>
+                <Image alt="GatsbyJS" src={IconGatsbyJS} {...skillIconSize} />
             </WrapItem>
         </SelectButton>
     ),

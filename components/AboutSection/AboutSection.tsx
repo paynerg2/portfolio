@@ -1,10 +1,11 @@
 import { Box, Divider, Heading, Stack, Text, VStack, Wrap } from '@chakra-ui/react';
-import OutlineLabel from './OutlineLabel/OutlineLabel';
-import { icons } from '../utils/skillIcons';
+import OutlineLabel from '../OutlineLabel/OutlineLabel';
+import { icons } from '../../utils/skillIcons';
+import { sectionNames } from '../../utils/constants';
 
 const AboutSection = () => {
     return (
-        <Stack id="about" direction="column" gap={6}>
+        <Stack id={sectionNames.about} direction="column" gap={6}>
             <Box>
                 <Heading>About Me</Heading>
                 <Divider orientation="horizontal" w={100} ml={10} mb={5} h={1} />

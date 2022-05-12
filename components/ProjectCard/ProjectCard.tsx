@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 import Image from 'next/image';
-import { Project } from '../utils/interfaces';
+import { Project } from '../../utils/interfaces';
 
 interface Props {
     project: Project;
@@ -27,6 +27,7 @@ const ProjectCard = ({ project }: Props) => {
         return (
             <>
                 <Button
+                    data-testid="github_link"
                     as="a"
                     href={githubRepo}
                     target="_blank"
@@ -39,6 +40,7 @@ const ProjectCard = ({ project }: Props) => {
                     See Code
                 </Button>
                 <Button
+                    data-testid="website_link"
                     as="a"
                     href={liveWebsite}
                     target="_blank"

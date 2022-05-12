@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
-import Container from './Container';
-import DarkModeSwitch from './DarkModeSwitch';
-import Header from './Header';
-import Main from './Main';
+import Container from '../Container/Container';
+import DarkModeSwitch from '../DarkModeSwitch';
+import Header from '../Header/Header';
+import Main from '../Main/Main';
 
 interface Props {
     children: ReactNode;

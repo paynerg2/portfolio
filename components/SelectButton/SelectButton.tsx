@@ -1,7 +1,8 @@
 import { Button } from '@chakra-ui/react';
+import { Tooltip } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { ReactNode, useContext, useEffect, useState } from 'react';
-import AppContext from '../utils/appContext';
+import AppContext from '../../utils/appContext';
 
 interface Props {
     children: ReactNode;
@@ -41,15 +42,17 @@ const SelectButton = ({ children, name }: Props) => {
         }
     };
     return (
-        <Button
-            onClick={handleClick}
-            variant="unstyled"
-            h="fit-content"
-            p={1}
-            boxShadow={isSelected ? 'outline' : 'none'}
-        >
-            {children}
-        </Button>
+        <Tooltip label={name} aria-label={name} placement="top">
+            <Button
+                onClick={handleClick}
+                variant="unstyled"
+                h="fit-content"
+                p={1}
+                boxShadow={isSelected ? 'outline' : 'none'}
+            >
+                {children}
+            </Button>
+        </Tooltip>
     );
 };
 

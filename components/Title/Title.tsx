@@ -1,6 +1,6 @@
 import { Box, Heading, useColorModeValue } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import { AnimatedText } from './AnimatedText';
+import { AnimatedText } from '../AnimatedText/AnimatedText';
 
 const descriptors = ['Web Developer', 'Math Enthusiast', 'Science Fiction Fan'];
 
@@ -12,7 +12,6 @@ const Title = () => {
         const modulus = descriptors.length;
         setTimeout(() => {
             setIndex((index + 1) % modulus);
-            console.log(descriptors[index]);
         }, 6000);
     });
 

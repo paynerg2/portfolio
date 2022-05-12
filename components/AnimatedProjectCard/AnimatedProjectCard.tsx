@@ -1,7 +1,7 @@
 import { SlideFade, SlideFadeProps, WrapItem } from '@chakra-ui/react';
 import { useInView } from 'react-intersection-observer';
-import { Project } from '../utils/interfaces';
-import ProjectCard from './ProjectCard';
+import { Project } from '../../utils/interfaces';
+import ProjectCard from '../ProjectCard/ProjectCard';
 
 interface Props {
     project: Project;

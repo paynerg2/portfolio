@@ -21,7 +21,7 @@ import IconStyledComponents from '../assets/icons/styled_components_logo.svg';
 import IconTypescript from 'react-devicon/typescript/plain/TypescriptPlain.svg';
 import IconVercel from '../assets/icons/vercel_logo.svg';
 import { WrapItem } from '@chakra-ui/react';
-import SelectButton from '../components/SelectButton';
+import SelectButton from '../components/SelectButton/SelectButton';
 import Image from 'next/image';
 import { skillIconSize } from '../utils/constants';
 

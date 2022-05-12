@@ -15,8 +15,8 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { useRef } from 'react';
-import { sectionNames } from '../utils/constants';
-import { scrollTo as scroll } from '../utils/scrollTo';
+import { sectionNames } from '../../utils/constants';
+import { scrollTo as scroll } from '../../utils/scrollTo';
 import { useRouter } from 'next/router';
 
 const Header = () => {

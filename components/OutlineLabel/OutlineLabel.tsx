@@ -30,7 +30,7 @@ const OutlineLabel = ({ children, label, ...props }: Props) => {
             m={20}
             {...props}
         >
-            <Label>{label}</Label>
+            <Label aria-label={label}>{label}</Label>
             {children}
         </Box>
     );

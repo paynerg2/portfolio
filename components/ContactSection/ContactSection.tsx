@@ -1,6 +1,6 @@
 import { Box, Heading, HStack, Stack, Text, Divider, Icon, IconButton } from '@chakra-ui/react';
-import { sectionNames } from '../utils/constants';
-import ContactForm from './ContactForm';
+import { sectionNames } from '../../utils/constants';
+import ContactForm from '../ContactForm';
 import { MdOutlineMailOutline, MdPhoneAndroid } from 'react-icons/md';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 

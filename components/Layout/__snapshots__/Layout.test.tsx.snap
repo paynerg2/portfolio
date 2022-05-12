@@ -1,0 +1,252 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Component renders the component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div
+      id="chakra-toast-portal"
+    >
+      <ul
+        id="chakra-toast-manager-top"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <ul
+        id="chakra-toast-manager-top-left"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        id="chakra-toast-manager-top-right"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        id="chakra-toast-manager-bottom-left"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <ul
+        id="chakra-toast-manager-bottom"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <ul
+        id="chakra-toast-manager-bottom-right"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+      />
+    </div>
+    <div>
+      <div
+        class="css-1x6soas"
+      >
+        <nav
+          class="css-1da5ya8"
+        >
+          <button
+            aria-label="Menu"
+            class="chakra-button css-335oov"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="chakra-icon css-r8yn95"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <div
+            class="chakra-stack css-14e37st"
+          >
+            <button
+              class="chakra-button css-5c2176"
+              type="button"
+            >
+              Projects
+            </button>
+            <button
+              class="chakra-button css-5c2176"
+              type="button"
+            >
+              About Me
+            </button>
+            <button
+              class="chakra-button css-5c2176"
+              type="button"
+            >
+              Contact
+            </button>
+            <a
+              class="chakra-button css-5c2176"
+              href="https://resume.creddle.io/resume/jltrgnkt9gg"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </div>
+        </nav>
+        <div
+          class="chakra-stack css-19y8om3"
+        >
+          <div>
+            test
+          </div>
+        </div>
+        <label
+          class="chakra-switch css-1e0rn3r"
+        >
+          <input
+            class="chakra-switch__input"
+            style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+            type="checkbox"
+            value=""
+          />
+          <span
+            aria-hidden="true"
+            class="chakra-switch__track css-14qxnv8"
+          >
+            <span
+              class="chakra-switch__thumb css-0"
+            />
+          </span>
+        </label>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="css-1x6soas"
+    >
+      <nav
+        class="css-1da5ya8"
+      >
+        <button
+          aria-label="Menu"
+          class="chakra-button css-335oov"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="chakra-icon css-r8yn95"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div
+          class="chakra-stack css-14e37st"
+        >
+          <button
+            class="chakra-button css-5c2176"
+            type="button"
+          >
+            Projects
+          </button>
+          <button
+            class="chakra-button css-5c2176"
+            type="button"
+          >
+            About Me
+          </button>
+          <button
+            class="chakra-button css-5c2176"
+            type="button"
+          >
+            Contact
+          </button>
+          <a
+            class="chakra-button css-5c2176"
+            href="https://resume.creddle.io/resume/jltrgnkt9gg"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Resume
+          </a>
+        </div>
+      </nav>
+      <div
+        class="chakra-stack css-19y8om3"
+      >
+        <div>
+          test
+        </div>
+      </div>
+      <label
+        class="chakra-switch css-1e0rn3r"
+      >
+        <input
+          class="chakra-switch__input"
+          style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+          type="checkbox"
+          value=""
+        />
+        <span
+          aria-hidden="true"
+          class="chakra-switch__track css-14qxnv8"
+        >
+          <span
+            class="chakra-switch__thumb css-0"
+          />
+        </span>
+      </label>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

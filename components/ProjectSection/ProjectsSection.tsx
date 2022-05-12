@@ -1,8 +1,8 @@
 import { Box, Button, Divider, Heading, Stack, Wrap } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons';
-import AnimatedProjectCard from './AnimatedProjectCard';
-import { sectionNames } from '../utils/constants';
-import { Project } from '../utils/interfaces';
+import AnimatedProjectCard from '../AnimatedProjectCard/AnimatedProjectCard';
+import { sectionNames } from '../../utils/constants';
+import { Project } from '../../utils/interfaces';
 import Link from 'next/link';
 
 interface Props {
@@ -23,7 +23,7 @@ const ProjectsSection = ({ projects, partial = false }: Props) => {
     };
 
     return (
-        <Stack id={sectionNames.projects} spacing="1em" align="flex-end" justify="right">
+        <Stack id={sectionNames.projects} spacing="1em" align="flex-start" justify="right">
             <Box alignSelf="flex-start">
                 <Heading>Personal Projects</Heading>
                 <Divider
@@ -45,11 +45,13 @@ const ProjectsSection = ({ projects, partial = false }: Props) => {
                 ))}
             </Wrap>
             {partial && (
-                <Link href={'/projects'} passHref>
-                    <Button w={140} size="lg" variant="ghost" rightIcon={<ArrowRightIcon />}>
-                        See More
-                    </Button>
-                </Link>
+                <Box alignSelf="flex-end">
+                    <Link href={'/projects'} passHref>
+                        <Button w={140} size="lg" variant="ghost" rightIcon={<ArrowRightIcon />}>
+                            See More
+                        </Button>
+                    </Link>
+                </Box>
             )}
         </Stack>
     );

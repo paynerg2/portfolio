@@ -3,7 +3,6 @@ import {
     Heading,
     Flex,
     useDisclosure,
-    useColorModeValue,
     IconButton,
     Drawer,
     DrawerOverlay,
@@ -23,8 +22,6 @@ const Header = () => {
     const router = useRouter();
     const { isOpen, onOpen, onClose } = useDisclosure();
     const menuButtonRef = useRef(null);
-    const headerColor = useColorModeValue('gray.50', 'gray.900');
-    const headerTextColor = useColorModeValue('gray.900', 'white');
 
     const handleToggle = () => (isOpen ? onClose() : onOpen());
 
@@ -89,15 +86,7 @@ const Header = () => {
     };
 
     return (
-        <Flex
-            as="nav"
-            wrap="wrap"
-            w="100vw"
-            padding={6}
-            mb={12}
-            bg={headerColor}
-            color={headerTextColor}
-        >
+        <Flex as="nav" wrap="wrap" w="100vw" padding={6} mb={12} bg="gray.900" color="white">
             {/* Mobile Nav */}
             <IconButton
                 ref={menuButtonRef}

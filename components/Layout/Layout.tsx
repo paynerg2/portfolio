@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 import Container from '../Container/Container';
-import DarkModeSwitch from '../DarkModeSwitch';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 
@@ -13,7 +12,6 @@ const Layout = ({ children }: Props) => {
         <Container pb={40}>
             <Header />
             <Main spacing={10}>{children}</Main>
-            <DarkModeSwitch />
         </Container>
     );
 };

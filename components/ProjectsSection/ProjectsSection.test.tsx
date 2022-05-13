@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import ProjectsSection from './ProjectsSection';
 import { projects } from '../../test/testData';
 import { sectionNames } from '../../utils/constants';

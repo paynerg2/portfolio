@@ -58,11 +58,12 @@ const ProjectCard = ({ project }: Props) => {
     return (
         <Stack spacing={4} w="full" alignItems="center" justifyContent="center" wrap="wrap">
             <Box
-                bg={useColorModeValue('white', 'gray.900')}
+                bg="gray.900"
                 h="35em"
                 maxW="sm"
                 minW="25em"
                 borderWidth="1px"
+                borderColor="blue.300"
                 rounded="lg"
                 shadow="lg"
                 position="relative"
@@ -72,7 +73,7 @@ const ProjectCard = ({ project }: Props) => {
             >
                 <Image src={image} alt={`${name}-preview`} />
                 <Stack p="1.5em" spacing={4} justifyContent="center" alignItems="center">
-                    <Heading color={useColorModeValue('blue.700', 'blue.300')}>{name}</Heading>
+                    <Heading color="blue.300">{name}</Heading>
                     <Box textAlign="center">{description}</Box>
                     <Flex justifyContent="center" flexWrap="wrap">
                         {tags.map((tag) => (

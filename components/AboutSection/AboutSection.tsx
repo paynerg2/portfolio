@@ -6,7 +6,7 @@ import { sectionNames } from '../../utils/constants';
 const AboutSection = () => {
     return (
         <Stack id={sectionNames.about} direction="column" gap={6}>
-            <Box>
+            <Box alignSelf={{ base: 'center', md: 'flex-start' }}>
                 <Heading>About Me</Heading>
                 <Divider orientation="horizontal" w={100} ml={10} mb={5} h={1} />
             </Box>

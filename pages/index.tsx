@@ -1,39 +1,41 @@
 import type { NextPage } from 'next';
-import Container from '../components/Container';
-import Main from '../components/Main';
-import DarkModeSwitch from '../components/DarkModeSwitch';
-import Header from '../components/Header';
-import Title from '../components/Title';
 import { Button, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
+import Title from '../components/Title/Title';
+import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
+import AboutSection from '../components/AboutSection/AboutSection';
+import ContactSection from '../components/ContactSection/ContactSection';
+import { scrollTo } from '../utils/scrollTo';
+import { sectionNames } from '../utils/constants';
+import { projects } from '../utils/sampleData';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
-    const ctaVariant = useColorModeValue('solid', 'outline');
-
     return (
-        <Container height="400vh">
-            <Header />
-            <Main spacing="2.5rem">
+        <Stack spacing={24}>
+            <Stack spacing={10}>
                 <Title />
                 <Stack w={{ base: '100%', md: '50%' }} spacing="2.5rem">
-                    <Text>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita aperiam
-                        repellendus animi corrupti itaque quam perspiciatis quia libero totam.
-                        Dolores nobis quia enim, nostrum maiores amet libero dignissimos esse
-                        facilis?
+                    <Text fontSize="lg">
+                        Welcome to my portfolio page! I&apos;m an enthusiastic maker and problem
+                        solver, with an eye for detail, and a passion for software development. If
+                        that sounds like someone you would like on your team,
                     </Text>
                     <Button
+                        onClick={() => scrollTo({ id: sectionNames.contact })}
                         rightIcon={<ArrowForwardIcon />}
                         colorScheme="blue"
                         aria-label="Contact Me"
-                        variant={ctaVariant}
+                        variant="outline"
                     >
                         Contact Me!
                     </Button>
                 </Stack>
-            </Main>
-            <DarkModeSwitch />
-        </Container>
+            </Stack>
+            <ProjectsSection projects={projects.slice(0, 2)} partial />
+            <AboutSection />
+            <ContactSection />
+        </Stack>
     );
 };
 

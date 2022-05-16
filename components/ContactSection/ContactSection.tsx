@@ -11,22 +11,32 @@ const ContactSection = () => {
     };
 
     return (
-        <Stack direction="column" gap={10} alignItems="flex-start">
-            <Box>
-                <Heading id={sectionNames.contact}>Contact Me</Heading>
-                <Divider orientation="horizontal" w={100} ml={10} mb={5} h={1} />
-                <Text color={contrastingTextColor}>
-                    Have any questions, or want to work with me? Send me a message!
-                </Text>
+        <Stack id={sectionNames.contact} gap={{ base: 2, md: 2 }} align="flex-start">
+            <Box w="fit-content" alignSelf={{ base: 'center', md: 'flex-start' }}>
+                <Heading>Contact Me</Heading>
+                <Divider orientation="horizontal" w={100} ml={10} h={1} />
             </Box>
-            <Stack direction="row" spacing={10} justify="center" w="100%">
+            <Text
+                color={contrastingTextColor}
+                alignSelf={{ base: 'center', md: 'flex-start' }}
+                textAlign="center"
+            >
+                Have any questions, or want to work with me? Send me a message!
+            </Text>
+            <Stack
+                direction={{ base: 'column', md: 'row' }}
+                pt={4}
+                spacing={10}
+                justify="center"
+                w="100%"
+            >
                 <ContactForm />
                 <Stack
                     spacing={5}
                     display="flex"
                     flexGrow={1}
                     direction="column"
-                    w="25%"
+                    w={{ base: '100%', md: '25%' }}
                     align="center"
                 >
                     <Stack direction="row" align="center" gap={1}>

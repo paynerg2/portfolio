@@ -111,7 +111,7 @@ const ContactForm = () => {
                 </FormControl>
                 <Button
                     height={16}
-                    width={60}
+                    width={{ base: '100%', md: 60 }}
                     alignSelf="flex-end"
                     colorScheme="gray"
                     isLoading={isSubmitting}

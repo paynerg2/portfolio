@@ -24,7 +24,7 @@ const ProjectsSection = ({ projects, partial = false }: Props) => {
 
     return (
         <Stack id={sectionNames.projects} spacing="1em" align="flex-start" justify="right">
-            <Box alignSelf="flex-start">
+            <Box alignSelf={{ base: 'center', md: 'flex-start' }}>
                 <Heading>Personal Projects</Heading>
                 <Divider
                     alignSelf="flex-start"

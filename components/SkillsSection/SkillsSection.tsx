@@ -9,8 +9,8 @@ interface Props {
 const SkillsSection = ({ id }: Props) => {
     return (
         <Stack id={id} spacing="2em">
-            <Heading>Skills</Heading>
-            <OutlineLabel label="Select skills to see which projects were made with them" pt={6}>
+            <Heading alignSelf={{ base: 'center', md: 'flex-start' }}>Skills</Heading>
+            <OutlineLabel label="Select skills to filter" pt={6}>
                 <SkillsList />
             </OutlineLabel>
         </Stack>

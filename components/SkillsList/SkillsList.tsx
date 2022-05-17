@@ -3,7 +3,7 @@ import { icons } from '../../utils/skillIcons';
 
 const SkillsList = () => {
     return (
-        <Wrap spacing={2}>
+        <Wrap spacing={1}>
             {(Object.keys(icons) as (keyof typeof icons)[]).map((key) => icons[key])}
         </Wrap>
     );

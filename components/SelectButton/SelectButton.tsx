@@ -37,7 +37,8 @@ const SelectButton = ({ children, name }: Props) => {
         setIsSelected((prev) => !prev);
 
         // Navigate if on the homepage
-        if (router.pathname !== 'projects') {
+        console.log(router.pathname);
+        if (router.pathname !== '/projects') {
             router.push('projects');
         }
     };

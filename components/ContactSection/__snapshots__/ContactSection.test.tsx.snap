@@ -34,29 +34,29 @@ Object {
     </div>
     <div>
       <div
-        class="chakra-stack css-134wq2"
+        class="chakra-stack css-mkmdx3"
+        id="contact"
       >
         <div
-          class="css-0"
+          class="css-1730u99"
         >
           <h2
             class="chakra-heading css-0"
-            id="contact"
           >
             Contact Me
           </h2>
           <hr
             aria-orientation="horizontal"
-            class="chakra-divider css-g3647t"
+            class="chakra-divider css-1fkxka"
           />
-          <p
-            class="chakra-text css-z2nxer"
-          >
-            Have any questions, or want to work with me? Send me a message!
-          </p>
         </div>
+        <p
+          class="chakra-text css-y5940o"
+        >
+          Have any questions, or want to work with me? Send me a message!
+        </p>
         <div
-          class="chakra-stack css-8l053e"
+          class="chakra-stack css-vaj099"
         >
           <form
             style="width: 100%;"
@@ -114,7 +114,7 @@ Object {
                 />
               </div>
               <button
-                class="chakra-button css-nxxp8o"
+                class="chakra-button css-1btismu"
                 type="submit"
               >
                 Submit
@@ -122,7 +122,7 @@ Object {
             </div>
           </form>
           <div
-            class="chakra-stack css-1rzwfrg"
+            class="chakra-stack css-fqhdp1"
           >
             <div
               class="chakra-stack css-1a4j7nd"
@@ -247,29 +247,29 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="chakra-stack css-134wq2"
+      class="chakra-stack css-mkmdx3"
+      id="contact"
     >
       <div
-        class="css-0"
+        class="css-1730u99"
       >
         <h2
           class="chakra-heading css-0"
-          id="contact"
         >
           Contact Me
         </h2>
         <hr
           aria-orientation="horizontal"
-          class="chakra-divider css-g3647t"
+          class="chakra-divider css-1fkxka"
         />
-        <p
-          class="chakra-text css-z2nxer"
-        >
-          Have any questions, or want to work with me? Send me a message!
-        </p>
       </div>
+      <p
+        class="chakra-text css-y5940o"
+      >
+        Have any questions, or want to work with me? Send me a message!
+      </p>
       <div
-        class="chakra-stack css-8l053e"
+        class="chakra-stack css-vaj099"
       >
         <form
           style="width: 100%;"
@@ -327,7 +327,7 @@ Object {
               />
             </div>
             <button
-              class="chakra-button css-nxxp8o"
+              class="chakra-button css-1btismu"
               type="submit"
             >
               Submit
@@ -335,7 +335,7 @@ Object {
           </div>
         </form>
         <div
-          class="chakra-stack css-1rzwfrg"
+          class="chakra-stack css-fqhdp1"
         >
           <div
             class="chakra-stack css-1a4j7nd"

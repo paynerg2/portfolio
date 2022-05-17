@@ -1,16 +1,15 @@
 import { Button, Stack } from '@chakra-ui/react';
 import { useContext, useEffect, useState } from 'react';
-import AppContext from '../../utils/appContext';
 import { ArrowLeftIcon } from '@chakra-ui/icons';
-import ProjectsSection from '../../components/ProjectsSection';
-import { projects } from '../../utils/sampleData';
 import Link from 'next/link';
-import SkillsSection from '../../components/SkillsSection';
+import AppContext from '../../utils/appContext';
+import ProjectsSection from '../../components/ProjectsSection/ProjectsSection';
+import SkillsSection from '../../components/SkillsSection/SkillsSection';
+import { projects } from '../../utils/sampleData';
 
 const Projects = () => {
     const { selectedTags } = useContext(AppContext);
     const [filteredProjects, setFilteredProjects] = useState(projects);
-    console.log(selectedTags);
 
     useEffect(() => {
         setFilteredProjects(

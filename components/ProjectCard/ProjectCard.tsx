@@ -61,7 +61,7 @@ const ProjectCard = ({ project }: Props) => {
                 bg="gray.900"
                 h="35em"
                 maxW="sm"
-                minW="25em"
+                //minW="25em"
                 borderWidth="1px"
                 borderColor="blue.300"
                 rounded="lg"
@@ -110,7 +110,7 @@ const ProjectCard = ({ project }: Props) => {
                     </Flex>
                 </Box>
             </Box>
-            <HStack spacing={8} display={{ base: 'block', md: 'none' }}>
+            <HStack spacing={8} display={{ base: 'flex', md: 'none' }}>
                 {getSourceLinks()}
             </HStack>
         </Stack>

@@ -86,7 +86,16 @@ const Header = () => {
     };
 
     return (
-        <Flex as="nav" wrap="wrap" w="100vw" padding={6} mb={12} bg="gray.900" color="white">
+        <Flex
+            as="nav"
+            wrap="wrap"
+            w="100vw"
+            padding={6}
+            mb={12}
+            bg="gray.900"
+            color="white"
+            boxSizing="border-box"
+        >
             {/* Mobile Nav */}
             <IconButton
                 ref={menuButtonRef}

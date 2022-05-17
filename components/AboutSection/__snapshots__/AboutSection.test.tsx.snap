@@ -56,7 +56,7 @@ Object {
           class="chakra-stack css-1ub28e"
         >
           <p
-            class="chakra-text css-1q3eayb"
+            class="chakra-text css-udl9mk"
           >
             My name is Rodney Payne. I've always fostered a desire to learn, understand, and engage with interesting and difficult topics. During my graduate studies, I started writing programs to analyze data and control laboratory systems, which led to a passion for building solutions with code.
           </p>
@@ -94,7 +94,7 @@ Object {
           </div>
         </div>
         <p
-          class="chakra-text css-mcpu91"
+          class="chakra-text css-1o97r86"
         >
           Now, I'm constantly dabbling with new technologies to find the best way to solve problems and keep up with the ever-changing landscape of software development.
         </p>
@@ -102,16 +102,16 @@ Object {
           class="css-1mfj9as"
         >
           <label
-            aria-label="Some tech I've enjoyed working with lately"
+            aria-label="What I've worked with recently"
             class="css-1j5o14"
           >
-            Some tech I've enjoyed working with lately
+            What I've worked with recently
           </label>
           <div
             class="chakra-wrap css-0"
           >
             <ul
-              class="chakra-wrap__list css-1l7wv6j"
+              class="chakra-wrap__list css-1sypo4r"
             >
               <button
                 class="chakra-button css-1g9agab"
@@ -358,7 +358,7 @@ Object {
         class="chakra-stack css-1ub28e"
       >
         <p
-          class="chakra-text css-1q3eayb"
+          class="chakra-text css-udl9mk"
         >
           My name is Rodney Payne. I've always fostered a desire to learn, understand, and engage with interesting and difficult topics. During my graduate studies, I started writing programs to analyze data and control laboratory systems, which led to a passion for building solutions with code.
         </p>
@@ -396,7 +396,7 @@ Object {
         </div>
       </div>
       <p
-        class="chakra-text css-mcpu91"
+        class="chakra-text css-1o97r86"
       >
         Now, I'm constantly dabbling with new technologies to find the best way to solve problems and keep up with the ever-changing landscape of software development.
       </p>
@@ -404,16 +404,16 @@ Object {
         class="css-1mfj9as"
       >
         <label
-          aria-label="Some tech I've enjoyed working with lately"
+          aria-label="What I've worked with recently"
           class="css-1j5o14"
         >
-          Some tech I've enjoyed working with lately
+          What I've worked with recently
         </label>
         <div
           class="chakra-wrap css-0"
         >
           <ul
-            class="chakra-wrap__list css-1l7wv6j"
+            class="chakra-wrap__list css-1sypo4r"
           >
             <button
               class="chakra-button css-1g9agab"

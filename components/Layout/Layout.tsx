@@ -9,7 +9,7 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
     return (
-        <Container pb={40}>
+        <Container maxW="100vw" pb={40}>
             <Header />
             <Main spacing={10}>{children}</Main>
         </Container>

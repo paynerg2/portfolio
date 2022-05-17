@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Button, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { Button, Stack, Text } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import Title from '../components/Title/Title';
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
@@ -8,7 +8,6 @@ import ContactSection from '../components/ContactSection/ContactSection';
 import { scrollTo } from '../utils/scrollTo';
 import { sectionNames } from '../utils/constants';
 import { projects } from '../utils/sampleData';
-import Link from 'next/link';
 
 const Home: NextPage = () => {
     return (

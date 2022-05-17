@@ -20,8 +20,6 @@ const ContactForm = () => {
     const toast = useToast();
 
     const onSubmit = async (values: any) => {
-        console.log(values);
-
         const { name, email, subject, message } = values;
         fetch('/api/contact', {
             method: 'POST',

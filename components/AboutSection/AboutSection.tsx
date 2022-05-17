@@ -11,7 +11,14 @@ const AboutSection = () => {
                 <Divider orientation="horizontal" w={100} ml={10} mb={5} h={1} />
             </Box>
             <Stack direction={{ base: 'column-reverse', md: 'row' }}>
-                <Text fontSize="xl" flexGrow={1} h="fit-content" w={{ base: '100%', md: '50vw' }}>
+                <Text
+                    fontSize="xl"
+                    textAlign={{ base: 'center', md: 'left' }}
+                    flexGrow={1}
+                    h="fit-content"
+                    w={{ base: '100%', md: '50vw' }}
+                    mt={{ base: 6, md: 0 }}
+                >
                     My name is Rodney Payne. I&apos;ve always fostered a desire to learn,
                     understand, and engage with interesting and difficult topics. During my graduate
                     studies, I started writing programs to analyze data and control laboratory
@@ -26,12 +33,12 @@ const AboutSection = () => {
                     <Text color="blue.300">B.S. Mathematics, Applied Physics</Text>
                 </VStack>
             </Stack>
-            <Text fontSize="xl">
+            <Text fontSize="xl" textAlign={{ base: 'center', md: 'left' }}>
                 Now, I&apos;m constantly dabbling with new technologies to find the best way to
                 solve problems and keep up with the ever-changing landscape of software development.
             </Text>
-            <OutlineLabel label="Some tech I've enjoyed working with lately">
-                <Wrap spacing={5}>
+            <OutlineLabel label="What I've worked with recently">
+                <Wrap spacing={{ base: 1, md: 5 }}>
                     {(
                         [
                             'React',

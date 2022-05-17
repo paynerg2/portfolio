@@ -15,7 +15,7 @@ const contact = async (req: NextApiRequest, res: NextApiResponse) => {
     };
 
     try {
-        sendGridMail.send(message);
+        await sendGridMail.send(message);
         res.send('Success');
     } catch (error) {
         res.send('Message could not be sent');

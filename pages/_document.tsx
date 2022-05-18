@@ -5,7 +5,6 @@ export default class Document extends NextDocument {
         return (
             <Html>
                 <Head />
-                <title>Rodney Payne</title>
                 <body>
                     <Main />
                     <NextScript />

@@ -10,12 +10,14 @@ import IconGraphQL from '../assets/icons/graphql_logo.svg';
 import IconHeroku from 'react-devicon/heroku/original/HerokuOriginal.svg';
 import IconHtml5 from 'react-devicon/html5/original/Html5Original.svg';
 import IconJavascript from 'react-devicon/javascript/original/JavascriptOriginal.svg';
+import IconJest from '../assets/icons/jest_logo.svg';
 import IconMongodb from 'react-devicon/mongodb/original-wordmark/MongodbOriginalWordmark.svg';
 import IconNetlify from '../assets/icons/netlify_logo.svg';
 import IconNextJS from '../assets/icons/nextjs_logo.svg';
 import IconNodejs from 'react-devicon/nodejs/original/NodejsOriginal.svg';
 import IconPython from 'react-devicon/python/original/PythonOriginal.svg';
 import IconReact from 'react-devicon/react/original/ReactOriginal.svg';
+import IconRedux from '../assets/icons/redux_logo.svg';
 import IconSass from 'react-devicon/sass/original/SassOriginal.svg';
 import IconStyledComponents from '../assets/icons/styled_components_logo.svg';
 import IconTypescript from 'react-devicon/typescript/plain/TypescriptPlain.svg';
@@ -26,13 +28,6 @@ import Image from 'next/image';
 import { skillIconSize } from '../utils/constants';
 
 export const icons = {
-    React: (
-        <SelectButton key="React" name="React">
-            <WrapItem>
-                <Image alt="React" src={IconReact} {...skillIconSize} />
-            </WrapItem>
-        </SelectButton>
-    ),
     Typescript: (
         <SelectButton key="Typescript" name="Typescript">
             <WrapItem>
@@ -61,6 +56,27 @@ export const icons = {
             </WrapItem>
         </SelectButton>
     ),
+    React: (
+        <SelectButton key="React" name="React">
+            <WrapItem>
+                <Image alt="React" src={IconReact} {...skillIconSize} />
+            </WrapItem>
+        </SelectButton>
+    ),
+    NextJS: (
+        <SelectButton key="NextJS" name="NextJS">
+            <WrapItem>
+                <Image alt="NextJS" src={IconNextJS} {...skillIconSize} />
+            </WrapItem>
+        </SelectButton>
+    ),
+    Redux: (
+        <SelectButton key="Redux" name="Redux">
+            <WrapItem>
+                <Image alt="Redux" src={IconRedux} {...skillIconSize} />
+            </WrapItem>
+        </SelectButton>
+    ),
     Sass: (
         <SelectButton key="Sass" name="Sass">
             <WrapItem>
@@ -68,10 +84,10 @@ export const icons = {
             </WrapItem>
         </SelectButton>
     ),
-    CSharp: (
-        <SelectButton key="CSharp" name="C#">
+    GatsbyJS: (
+        <SelectButton key="GatsbyJS" name="GatsbyJS">
             <WrapItem>
-                <Image alt="C#" src={IconCsharp} {...skillIconSize} />
+                <Image alt="GatsbyJS" src={IconGatsbyJS} {...skillIconSize} />
             </WrapItem>
         </SelectButton>
     ),
@@ -89,6 +105,13 @@ export const icons = {
             </WrapItem>
         </SelectButton>
     ),
+    CSharp: (
+        <SelectButton key="CSharp" name="C#">
+            <WrapItem>
+                <Image alt="C#" src={IconCsharp} {...skillIconSize} />
+            </WrapItem>
+        </SelectButton>
+    ),
     Python: (
         <SelectButton key="Python" name="Python">
             <WrapItem>
@@ -103,31 +126,10 @@ export const icons = {
             </WrapItem>
         </SelectButton>
     ),
-    Heroku: (
-        <SelectButton key="Heroku" name="Heroku">
-            <WrapItem>
-                <Image alt="Heroku" src={IconHeroku} {...skillIconSize} />
-            </WrapItem>
-        </SelectButton>
-    ),
-    ChakraUI: (
-        <SelectButton key="ChakraUI" name="ChakraUI">
-            <WrapItem>
-                <Image alt="Heroku" src={IconChakraUI} {...skillIconSize} />
-            </WrapItem>
-        </SelectButton>
-    ),
     GraphQL: (
         <SelectButton key="GraphQL" name="GraphQL">
             <WrapItem>
                 <Image alt="GraphQL" src={IconGraphQL} {...skillIconSize} />
-            </WrapItem>
-        </SelectButton>
-    ),
-    Netlify: (
-        <SelectButton key="Netlify" name="Netlify">
-            <WrapItem>
-                <Image alt="Netlify" src={IconNetlify} {...skillIconSize} />
             </WrapItem>
         </SelectButton>
     ),
@@ -138,6 +140,22 @@ export const icons = {
             </WrapItem>
         </SelectButton>
     ),
+    ChakraUI: (
+        <SelectButton key="ChakraUI" name="ChakraUI">
+            <WrapItem>
+                <Image alt="Heroku" src={IconChakraUI} {...skillIconSize} />
+            </WrapItem>
+        </SelectButton>
+    ),
+
+    Netlify: (
+        <SelectButton key="Netlify" name="Netlify">
+            <WrapItem>
+                <Image alt="Netlify" src={IconNetlify} {...skillIconSize} />
+            </WrapItem>
+        </SelectButton>
+    ),
+
     Vercel: (
         <SelectButton key="Vercel" name="Vercel">
             <WrapItem>
@@ -145,10 +163,10 @@ export const icons = {
             </WrapItem>
         </SelectButton>
     ),
-    NextJS: (
-        <SelectButton key="NextJS" name="NextJS">
+    Heroku: (
+        <SelectButton key="Heroku" name="Heroku">
             <WrapItem>
-                <Image alt="NextJS" src={IconNextJS} {...skillIconSize} />
+                <Image alt="Heroku" src={IconHeroku} {...skillIconSize} />
             </WrapItem>
         </SelectButton>
     ),
@@ -159,10 +177,10 @@ export const icons = {
             </WrapItem>
         </SelectButton>
     ),
-    GatsbyJS: (
-        <SelectButton key="GatsbyJS" name="GatsbyJS">
+    Jest: (
+        <SelectButton key="Jest" name="Jest">
             <WrapItem>
-                <Image alt="GatsbyJS" src={IconGatsbyJS} {...skillIconSize} />
+                <Image alt="Jest" src={IconJest} {...skillIconSize} />
             </WrapItem>
         </SelectButton>
     ),

@@ -2,6 +2,7 @@ import { Project } from './interfaces';
 import TrackrPreview from '../assets/Trackr-Preview.png';
 import MediaLibraryPreview from '../assets/Media-Library-Preview.png';
 import CaveBarMenuPreview from '../assets/Cave_Bar_Menu_Preview.png';
+import PortfolioPreview from '../assets/Portfolio_Preview.png';
 
 export const projects: Project[] = [
     {
@@ -41,6 +42,7 @@ export const projects: Project[] = [
             'Typescript',
             'Styled Components',
             'React Spring',
+            'NodeJS',
             'Express',
             'MongoDB',
             'Jest',
@@ -61,11 +63,11 @@ export const projects: Project[] = [
     {
         name: 'Portfolio',
         description:
-            'The portfolio you are currently viewing. Take a behind-the-scenes look at how it was made!.',
+            'The portfolio you are currently viewing. Take a behind-the-scenes look at how it was made!',
         //@ts-ignore
-        image: CaveBarMenuPreview,
+        image: PortfolioPreview,
         githubRepo: 'https://github.com/paynerg2/portfolio',
-        liveWebsite: 'https://cave-bar-menu.herokuapp.com',
+        liveWebsite: 'https://www.rodneypayne.dev',
         tags: ['Typescript', 'NextJS', 'ChakraUI', 'Framer Motion', 'Jest', 'Vercel'],
     },
 ];

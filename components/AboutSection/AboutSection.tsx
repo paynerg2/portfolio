@@ -37,7 +37,7 @@ const AboutSection = () => {
                 Now, I&apos;m constantly dabbling with new technologies to find the best way to
                 solve problems and keep up with the ever-changing landscape of software development.
             </Text>
-            <OutlineLabel label="What I've worked with recently">
+            <OutlineLabel label="Tech I've worked with recently">
                 <Wrap spacing={{ base: 1, md: 5 }}>
                     {(
                         [

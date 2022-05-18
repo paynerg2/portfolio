@@ -102,10 +102,10 @@ Object {
           class="css-1mfj9as"
         >
           <label
-            aria-label="What I've worked with recently"
+            aria-label="Tech I've worked with recently"
             class="css-1j5o14"
           >
-            What I've worked with recently
+            Tech I've worked with recently
           </label>
           <div
             class="chakra-wrap css-0"
@@ -404,10 +404,10 @@ Object {
         class="css-1mfj9as"
       >
         <label
-          aria-label="What I've worked with recently"
+          aria-label="Tech I've worked with recently"
           class="css-1j5o14"
         >
-          What I've worked with recently
+          Tech I've worked with recently
         </label>
         <div
           class="chakra-wrap css-0"

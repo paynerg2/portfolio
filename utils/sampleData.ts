@@ -11,7 +11,7 @@ export const projects: Project[] = [
             'Job hunting assistant for aspiring software developers. Tracks applications, interviews, and more. Automatically generates charts to visualize the process.',
         //@ts-ignore
         image: TrackrPreview,
-        githubRepo: 'https://github.com/paynerg2/trackr',
+        githubRepo: 'https://github.com/paynerg2/application-tracker',
         liveWebsite: 'https://devjob-trackr.com',
         tags: [
             'React',

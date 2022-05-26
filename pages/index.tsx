@@ -24,7 +24,7 @@ const Home: NextPage = () => {
                         <Text fontSize="lg">
                             Welcome to my portfolio page! I&apos;m an enthusiastic maker and problem
                             solver, with an eye for detail, and a passion for software development.
-                            If that sounds like someone you would like on your team,
+                            If that sounds like someone you would like on your team
                         </Text>
                         <Button
                             onClick={() => scrollTo({ id: sectionNames.contact })}

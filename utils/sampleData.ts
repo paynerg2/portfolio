@@ -31,7 +31,7 @@ export const projects: Project[] = [
     {
         name: 'Media Library',
         description:
-            'Personal media library catalog. Allows users to keep the contents of their collection on hand while on the hunt for new additions.',
+            'Personal media library catalog. Allows users to manage their collection, and keep it available to quickly reference while on the hunt for new additions.',
         //@ts-ignore
         image: MediaLibraryPreview,
         githubRepo: 'https://github.com/paynerg2/Media-Library',

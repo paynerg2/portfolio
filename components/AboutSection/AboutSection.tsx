@@ -45,9 +45,10 @@ const AboutSection = () => {
                             'NextJS',
                             'Typescript',
                             'Javascript',
-                            'Express',
-                            'MongoDB',
+                            'NodeJS',
                             'CSharp',
+                            'DotnetCore',
+                            'MongoDB',
                         ] as (keyof typeof icons)[]
                     ).map((language) => icons[language])}
                 </Wrap>

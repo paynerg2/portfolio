@@ -26,6 +26,8 @@ export const projects: Project[] = [
             'Jest',
             'Netlify',
             'Heroku',
+            'C#',
+            '.NET Core',
         ],
     },
     {

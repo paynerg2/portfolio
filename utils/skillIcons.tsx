@@ -4,6 +4,7 @@ import IconChakraUI from '../assets/icons/chakra_ui_logo.svg';
 import IconContentful from '../assets/icons/contentful_logo.svg';
 import IconCsharp from 'react-devicon/csharp/original/CsharpOriginal.svg';
 import IconCss3 from 'react-devicon/css3/original/Css3Original.svg';
+import IconDotnetCore from '../assets/icons/dotnet_core_logo.svg';
 import IconExpress from 'react-devicon/express/original/ExpressOriginal.svg';
 import IconGatsbyJS from '../assets/icons/gatsby_logo.svg';
 import IconGraphQL from '../assets/icons/graphql_logo.svg';
@@ -53,6 +54,13 @@ export const icons = {
         <SelectButton key="CSS3" name="CSS3">
             <WrapItem>
                 <Image alt="CSS3" src={IconCss3} {...skillIconSize} />
+            </WrapItem>
+        </SelectButton>
+    ),
+    DotnetCore: (
+        <SelectButton key="DotnetCore" name=".NET Core">
+            <WrapItem>
+                <Image alt=".NET Core" src={IconDotnetCore} {...skillIconSize} />
             </WrapItem>
         </SelectButton>
     ),

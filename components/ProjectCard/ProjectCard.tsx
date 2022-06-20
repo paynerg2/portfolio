@@ -1,16 +1,6 @@
 import { useState } from 'react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
-import {
-    Box,
-    Flex,
-    useColorModeValue,
-    Heading,
-    Tag,
-    Stack,
-    Button,
-    Icon,
-    HStack,
-} from '@chakra-ui/react';
+import { Box, Flex, Heading, Tag, Stack, Button, Icon, HStack } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 import Image from 'next/image';
 import { Project } from '../../utils/interfaces';
